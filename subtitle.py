@@ -9,7 +9,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "Привет! Присылай мне ссылки на YouTube (формат: https://youtu.be/...)")
+    bot.reply_to(message, "ёПривет! Присылай мне ссылки на YouTube (формат: https://youtu.be/...)")
 
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
