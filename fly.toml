@@ -20,3 +20,8 @@ primary_region = 'waw'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+
+[[http_service.checks]]  
+  interval = "10s"  
+  timeout = "2s"  
+  path = "/"  # или "/health", если у вас есть такой route  
